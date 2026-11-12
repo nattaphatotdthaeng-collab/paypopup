@@ -18,7 +18,7 @@ jobs:
       # Installs Gradle for us, so no gradlew wrapper is needed in the repo
       - uses: gradle/actions/setup-gradle@v4
         with:
-          gradle-version: 9.3.0
+          gradle-version: current
 
       - name: Build
         run: gradle build
