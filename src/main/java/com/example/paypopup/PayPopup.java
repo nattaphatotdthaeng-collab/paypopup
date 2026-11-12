@@ -2,7 +2,6 @@ package com.example.paypopup;
 
 import java.util.Random;
 
-import net.minecraft.Util;
 import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
@@ -26,7 +25,7 @@ public final class PayPopup {
     public static void trigger(String player, String amt) {
         from = player;
         amount = amt;
-        start = Util.getMillis();
+        start = System.currentTimeMillis();
 
         Random r = new Random();
         for (float[] c : coins) {
@@ -41,7 +40,7 @@ public final class PayPopup {
 
     public static void render(GuiGraphicsExtractor g, DeltaTracker delta) {
         if (start < 0) return;
-        long t = Util.getMillis() - start;
+        long t = System.currentTimeMillis() - start;
         if (t > DURATION) { start = -1; return; }
 
         Minecraft mc = Minecraft.getInstance();
