@@ -50,7 +50,7 @@ public final class PayPopup {
     private static final int DIGIT_SPACING = 0;  // extra pixels between the characters of the amount (0 = normal Minecraft text)
     private static final int PANEL_H = 29;       // height of a panel
     private static final int FACE = 20;          // size of the player face
-    private static final boolean SCREEN_SHAKE = true;  // black hole: gently shake your view (set to false to switch off)
+
 
     private static final long SLIDE_IN = 600;
     private static final long FADE_OUT = 700;
