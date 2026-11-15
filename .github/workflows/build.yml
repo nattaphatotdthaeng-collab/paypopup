@@ -84,7 +84,7 @@ public final class PayPopup {
         final float[][] sparks = new float[5][3];     // xFrac, yFrac, phase
         final float[][] disk = new float[460][5];     // angle, radius (x hole size), spin, size, jitter
         final float[][] stars = new float[70][4];     // angle, radius, size, phase
-        final float[] segHue = new float[12];         // jackpot wheel: random colour of each segment
+
         int winSeg, winRgb;                           // jackpot wheel: where it lands and that colour
         float wheelTurns;                             // jackpot wheel: how far it spins in total
     }
